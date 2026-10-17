@@ -1,97 +1,59 @@
-\# Walmart Sales ETL and Analytics Project
+Walmart Sales ETL and Analytics Project
 
-
-
-\## Project Overview
-
-
+Project Overview
 
 This project builds an end-to-end retail data pipeline using Walmart sales data.
 
-
-
 The objective is to transform raw sales and store-level datasets into an analytics-ready structure, load the data into PostgreSQL, perform SQL-based business analysis, and visualize the results using Tableau.
-
-
 
 The project focuses on understanding sales performance, seasonality, store and department behaviour, holiday effects, and the relationship between sales and external factors such as temperature, CPI, unemployment, and fuel prices.
 
 
-
-\## Project Workflow
-
-
-
+Project Workflow:
 Raw CSV Data
-
 → Python Data Exploration
-
 → Data Quality Checks
-
 → Data Cleaning and Transformation
-
 → PostgreSQL Loading
-
 → SQL Analysis and Data Enrichment
-
 → Tableau Dashboard
 
 
 
-\## Dataset
-
-
-
+Dataset
 The project uses four Walmart datasets:
 
 
 
-\* `train.csv` - historical weekly sales by store and department
+`train.csv` historical weekly sales by store and department
 
-\* `test.csv` - future periods without sales values
+`test.csv` - future periods without sales values
 
-\* `features.csv` - economic, holiday, weather, and markdown information
+`features.csv` - economic, holiday, weather, and markdown information
 
-\* `stores.csv` - store type and size information
+`stores.csv` - store type and size information
 
 
 
 The main training dataset contains approximately 421,000 weekly sales records.
 
-
-
 Raw and processed CSV files are excluded from this GitHub repository through `.gitignore`.
 
 
 
-\## Technologies Used
+Technologies Used:
+1) Python
+2) Pandas
+3) PostgreSQL
+4) SQLAlchemy
+5) psycopg2
+6) SQL
+7) Tableau
+8) Git
+9) GitHub
 
 
-
-\* Python
-
-\* Pandas
-
-\* PostgreSQL
-
-\* SQLAlchemy
-
-\* psycopg2
-
-\* SQL
-
-\* Tableau
-
-\* Git
-
-\* GitHub
-
-
-
-\## Project Structure
-
-
-
+Project Structure:
 ```text
 
 walmart-sales-etl/
@@ -150,23 +112,17 @@ walmart-sales-etl/
 
 
 
-\## ETL Process
+ETL Process
 
-
-
-\### Extract
-
-
+Extract
 
 The raw Walmart CSV files are loaded using Python and Pandas.
-
-
 
 Initial exploration is performed to understand:
 
 
 
-\* dataset size
+dataset size:
 
 \* column structure
 
